@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFlow - Modern Fitness & Wellness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo-section">
+                    
+                    <span class="brand-name">FitFlow</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Body, Transform Your Life</h1>
+            <p class="hero-subtitle">Join FitFlow today and experience the power of personalized fitness & wellness</p>
+            <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Explore Services</button>
+            <button class="btn btn-secondary" onclick="window.location.href='contact.html'">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="200" fill="none"/>
+                <circle cx="200" cy="200" r="150" fill="#FF6B35" opacity="0.1"/>
+                <circle cx="200" cy="200" r="130" fill="none" stroke="#FF6B35" stroke-width="2"/>
+                <!-- Simple fitness figure -->
+                <circle cx="200" cy="120" r="20" fill="#FF6B35"/>
+                <line x1="200" y1="140" x2="200" y2="200" stroke="#FF6B35" stroke-width="3"/>
+                <line x1="200" y1="160" x2="160" y2="140" stroke="#FF6B35" stroke-width="3"/>
+                <line x1="200" y1="160" x2="240" y2="140" stroke="#FF6B35" stroke-width="3"/>
+                <line x1="200" y1="200" x2="180" y2="260" stroke="#FF6B35" stroke-width="3"/>
+                <line x1="200" y1="200" x2="220" y2="260" stroke="#FF6B35" stroke-width="3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose FitFlow?</h2>
+        <div class="features-grid">
+            <article class="feature-card">
+                <div class="feature-icon">💪</div>
+                <h3>Expert Trainers</h3>
+                <p>Certified professionals with years of experience in fitness coaching and nutrition guidance.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Personalized Plans</h3>
+                <p>Customized workout and nutrition plans tailored to your goals and lifestyle.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Tech-Driven</h3>
+                <p>Modern tracking tools and mobile app integration for seamless fitness management.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Community Support</h3>
+                <p>Join a thriving community of fitness enthusiasts and get motivated together.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-carousel">
+            <div class="service-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23FF6B35' opacity='0.1'/%3E%3Ctext x='150' y='100' font-size='40' text-anchor='middle' dominant-baseline='middle'%3E🏋️%3C/text%3E%3C/svg%3E" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>One-on-one coaching with expert trainers</p>
+                <span class="price">From $50/session</span>
+            </div>
+            <div class="service-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23FF6B35' opacity='0.1'/%3E%3Ctext x='150' y='100' font-size='40' text-anchor='middle' dominant-baseline='middle'%3E🥗%3C/text%3E%3C/svg%3E" alt="Nutrition Coaching">
+                <h3>Nutrition Coaching</h3>
+                <p>Personalized meal plans and dietary guidance</p>
+                <span class="price">From $30/session</span>
+            </div>
+            <div class="service-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23FF6B35' opacity='0.1'/%3E%3Ctext x='150' y='100' font-size='40' text-anchor='middle' dominant-baseline='middle'%3E🧘%3C/text%3E%3C/svg%3E" alt="Wellness Classes">
+                <h3>Wellness Classes</h3>
+                <p>Yoga, meditation, and group fitness sessions</p>
+                <span class="price">From $15/class</span>
+            </div>
+        </div>
+        <a href="services.html" class="btn btn-primary">View All Services</a>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Members Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>"FitFlow changed my life! The personalized coaching and supportive community kept me motivated throughout my fitness journey."</p>
+                <strong>- Sarah Johnson</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Professional trainers, amazing facilities, and the results speak for themselves. Highly recommended for anyone serious about fitness!"</p>
+                <strong>- Michael Chen</strong>
+            </div>
+            <div class="testimonial">
+                <p>"The nutrition coaching combined with workout plans made everything so easy to follow. I finally achieved my dream body!"</p>
+                <strong>- Emma Williams</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready to Transform?</h2>
+        <p>Start your fitness journey with FitFlow today</p>
+        <a href="contact.html" class="btn btn-light">Join Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About FitFlow</h4>
+                <p>Your  first destination for fitness and wellness excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 123 Fitness Street, Wellness City</p>
+                <p>📧 info@fitflow.com</p>
+                <p>📞 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FitFlow Wellness Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
